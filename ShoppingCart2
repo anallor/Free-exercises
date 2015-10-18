@@ -21,7 +21,7 @@ class Item
     @price = price
     end
     def price
-     return @price
+    @price
     end
 class Apple < Item
 end
