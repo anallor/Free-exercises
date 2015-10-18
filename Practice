@@ -1,0 +1,7 @@
+print "Escriba cinco palabras"
+var = gets
+var.split.sort.each do |word|
+    if word.length > 3
+        puts word
+    end
+end
