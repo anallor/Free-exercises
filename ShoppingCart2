@@ -20,6 +20,9 @@ class Item
     def initialize(price)
     @price = price
     end
+    def price
+     return @price
+    end
 class Apple < Item
 end
 class Orange < Item
