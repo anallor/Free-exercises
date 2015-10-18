@@ -5,3 +5,28 @@ var.split.sort.each do |word|
         puts word
     end
 end
+
+
+class Traductor
+    
+    def initialize(ingles, frances, aleman)
+    @ingles = ingles
+    @frances = frances
+    @aleman = aleman
+    end
+    
+    def traducir
+        puts "#{@ingles}eishon"
+        puts "#{@frances}e"
+        puts "#{@aleman}frufrunguen"
+        
+    end
+
+    
+end
+
+traducciona = Traductor.new("Nevera", "Nevera", "Nevera")
+traducciona2 = Traductor.new("Platana", "Platano", "Platano")
+
+traducciona.traducir
+traducciona2.traducir
