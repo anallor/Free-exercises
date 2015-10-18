@@ -1,0 +1,44 @@
+class ShoppingCart
+  attr_accessor(:items)
+
+  def initialize
+    @items = []
+  end
+
+  def add_item(item)
+    @items.push(item)
+  end
+
+  def calculate_total
+    total = @items.reduce(0) do |sum, item|
+      sum + item.price
+    end
+end
+
+
+class Item
+    def initialize(price)
+    @price = price
+    end
+class Apple < Item
+end
+class Orange < Item
+end
+class Grapes < Item
+end
+class Banana < Item
+end
+class Watermelon < Item
+end
+end
+
+oranges = Orange.new(2)
+bananas = Banana.new(3)
+
+my_cart = ShoppingCart.new
+my_cart.add_item(oranges)
+my_cart.add_item(bananas)
+my_cart.calculate_total
+
+print "Your total today is #{my_cart.calculate_total} euros"
+end
