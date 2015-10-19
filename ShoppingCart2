@@ -1,5 +1,5 @@
 class ShoppingCart
-  attr_accessor(:items)
+     attr_accessor(:items)
 
   def initialize
     @items = []
@@ -15,24 +15,21 @@ class ShoppingCart
     end
 end
 
-
 class Item
     def initialize(price)
-    @price = price
+        @price = price
     end
+    
     def price
-    @price
+        @price
     end
+end
+
 class Apple < Item
 end
 class Orange < Item
 end
-class Grapes < Item
-end
 class Banana < Item
-end
-class Watermelon < Item
-end
 end
 
 oranges = Orange.new(2)
