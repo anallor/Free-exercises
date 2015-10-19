@@ -10,7 +10,7 @@ class ShoppingCart
   end
 
   def calculate_total
-    total = @items.reduce(0) do |sum, item|
+    calculate_total = @items.reduce(0) do |sum, item|
       sum + item.price
     end
 end
